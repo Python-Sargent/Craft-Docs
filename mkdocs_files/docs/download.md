@@ -86,14 +86,14 @@ Once you have the dependencies (see above), run the following commands in your
 terminal.
 
 ```shell
-git clone https://github.com/Python-Sargent/Craft.git
-cd Craft
+git clone https://github.com/Python-Sargent/OpenCube.git
+cd OpenCube
 cmake .
 make
 ./craft
 ```
 
 This will clone the repo, move your working directory to the repo directory and use `cmake` to get the build ready to compile using `make`.
-Then the `craft` binary is run using `./craft`. You can now enjoy Craft.
+Then the `craft` binary is run using `./craft`. You can now enjoy OpenCube.
 
 ---
