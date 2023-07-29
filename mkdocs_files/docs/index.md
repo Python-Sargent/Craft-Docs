@@ -1,8 +1,12 @@
-# Craft Documentation
+# Overview
 
-From the [Readme on Github](https://github.com/Python-Sargent/Craft)
+See the [Readme on Github](https://github.com/Python-Sargent/Craft)
 
 Go to [The Repo on Github](https://github.com/Python-Sargent/Craft) for source code _(No packages available)_
+
+This source will have to compiled, you may have trouble compiling on Windows as the proccesses are convouluted.
+
+---
 
 ## Description
 

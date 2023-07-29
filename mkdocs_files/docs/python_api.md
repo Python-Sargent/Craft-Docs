@@ -2,6 +2,8 @@
 
 Everything that is not written in C and CPP uses Python. (besides CMake and GLSL)
 
+---
+
 ### builder.py
 
 #### Block Types
@@ -33,9 +35,11 @@ WHITE_FLOWER = 22  # orchid
 BLUE_FLOWER = 23   # grape hyacinth
 ```
 
+---
+
 #### Functions
 
-`sphere()` function:
+##### `sphere()`
 
 ```py
 sphere(cx, cy, cz, r, fill=False, fx=False, fy=False, fz=False)
@@ -45,7 +49,7 @@ Make a sphere at position `cx, cy, cz`. Filled if `fill` is true. `fx, fy, fz` (
 
 ---
 
-`circle_x()`
+##### `circle_x()`
 
 ```py
 circle_x(x, y, z, r, fill=False)
@@ -55,7 +59,7 @@ Makes a circle with the center point a `x, y, z`, and a radius of `r`, facing al
 
 ---
 
-`circle_y()`
+##### `circle_y()`
 
 ```py
 circle_y(x, y, z, r, fill=False)
@@ -65,7 +69,7 @@ Makes a circle with the center point a `x, y, z`, and a radius of `r`, facing al
 
 ---
 
-`circle_z()`
+##### `circle_z()`
 
 ```py
 circle_z(x, y, z, r, fill=False)
@@ -75,7 +79,7 @@ Makes a circle with the center point a `x, y, z`, and a radius of `r`, facing al
 
 ---
 
-`cylinder_x()`
+##### `cylinder_x()`
 
 ```py
 cylinder_x(x1, x2, y, z, r, fill=False)
@@ -86,7 +90,7 @@ Filled if `fill` is true.
 ving the y and x of the two points `x1` and `x2`
 ---
 
-`cylinder_y()`
+##### `cylinder_y()`
 
 ```py
 cylinder_y(x, y1, y2, z, r, fill=False)
@@ -97,7 +101,7 @@ Filled if `fill` is true.
 
 ---
 
-`cylinder_z()`
+##### `cylinder_z()`
 
 ```py
 cylinder_z(x, y, z1, z2, r, fill=False)
@@ -106,15 +110,21 @@ cylinder_z(x, y, z1, z2, r, fill=False)
 Make a cylinder from point `z1` to point `z2` with `x` and `y` giving the other axes of the positional argument, with a radius of `r`.
 Filled if `fill` is true.
 
+---
+
 ### world.py
 
 Simple script that helps with the python side of world making.
+
+---
 
 ### server.py
 
 Runs Multiplayer server scripts.
 
 Makes server/client objects/functions.
+
+---
 
 #### Packet Codes
 
@@ -134,3 +144,5 @@ TIME = 'E'
 VERSION = 'V'
 YOU = 'U'
 ```
+
+---

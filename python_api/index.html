@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../overview/">
+        <link rel="prev" href="../implementation/">
       
       
       <link rel="icon" href="../assets/logo.png">
@@ -187,7 +187,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Craft Documentation
+        Overview
       </a>
     </li>
   
@@ -201,8 +201,38 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
-        Overview
+      <a href="../download/" class="md-nav__link">
+        Download
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gameplay/" class="md-nav__link">
+        Gameplay
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../implementation/" class="md-nav__link">
+        Implementation
       </a>
     </li>
   
@@ -272,6 +302,61 @@
   <a href="#functions" class="md-nav__link">
     Functions
   </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sphere" class="md-nav__link">
+    sphere()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circle_x" class="md-nav__link">
+    circle_x()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circle_y" class="md-nav__link">
+    circle_y()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circle_z" class="md-nav__link">
+    circle_z()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cylinder_x" class="md-nav__link">
+    cylinder_x()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cylinder_y" class="md-nav__link">
+    cylinder_y()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cylinder_z" class="md-nav__link">
+    cylinder_z()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -372,6 +457,61 @@
     Functions
   </a>
   
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sphere" class="md-nav__link">
+    sphere()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circle_x" class="md-nav__link">
+    circle_x()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circle_y" class="md-nav__link">
+    circle_y()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circle_z" class="md-nav__link">
+    circle_z()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cylinder_x" class="md-nav__link">
+    cylinder_x()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cylinder_y" class="md-nav__link">
+    cylinder_y()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cylinder_z" class="md-nav__link">
+    cylinder_z()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -430,6 +570,7 @@
 
 <h2 id="api">Api</h2>
 <p>Everything that is not written in C and CPP uses Python. (besides CMake and GLSL)</p>
+<hr />
 <h3 id="builderpy">builder.py</h3>
 <h4 id="block-types">Block Types</h4>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">EMPTY</span> <span class="o">=</span> <span class="mi">0</span>          <span class="c1"># &#39;Air&#39;</span>
@@ -457,50 +598,54 @@
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="n">WHITE_FLOWER</span> <span class="o">=</span> <span class="mi">22</span>  <span class="c1"># orchid</span>
 </span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="n">BLUE_FLOWER</span> <span class="o">=</span> <span class="mi">23</span>   <span class="c1"># grape hyacinth</span>
 </span></code></pre></div>
+<hr />
 <h4 id="functions">Functions</h4>
-<p><code>sphere()</code> function:</p>
+<h5 id="sphere"><code>sphere()</code></h5>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">sphere</span><span class="p">(</span><span class="n">cx</span><span class="p">,</span> <span class="n">cy</span><span class="p">,</span> <span class="n">cz</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fx</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fz</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Make a sphere at position <code>cx, cy, cz</code>. Filled if <code>fill</code> is true. <code>fx, fy, fz</code> (undocumented).</p>
 <hr />
-<p><code>circle_x()</code></p>
+<h5 id="circle_x"><code>circle_x()</code></h5>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">circle_x</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Makes a circle with the center point a <code>x, y, z</code>, and a radius of <code>r</code>, facing along the x axis. Filled if <code>fill</code> is true.</p>
 <hr />
-<p><code>circle_y()</code></p>
+<h5 id="circle_y"><code>circle_y()</code></h5>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">circle_y</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Makes a circle with the center point a <code>x, y, z</code>, and a radius of <code>r</code>, facing along the y axis. Filled if <code>fill</code> is true.</p>
 <hr />
-<p><code>circle_z()</code></p>
+<h5 id="circle_z"><code>circle_z()</code></h5>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">circle_z</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Makes a circle with the center point a <code>x, y, z</code>, and a radius of <code>r</code>, facing along the z axis. Filled if <code>fill</code> is true.</p>
 <hr />
-<p><code>cylinder_x()</code></p>
+<h5 id="cylinder_x"><code>cylinder_x()</code></h5>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">cylinder_x</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Make a cylinder from point <code>x1</code> to point <code>x2</code> with <code>y</code> and <code>z</code> giving the other axes of the positional argument, with a radius of <code>r</code>.
 Filled if <code>fill</code> is true.
 ving the y and x of the two points <code>x1</code> and <code>x2</code></p>
 <hr />
-<p><code>cylinder_y()</code></p>
+<h5 id="cylinder_y"><code>cylinder_y()</code></h5>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">cylinder_y</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Make a cylinder from point <code>y1</code> to point <code>y2</code> with <code>x</code> and <code>z</code> giving the other axes of the positional argument, with a radius of <code>r</code>.
 Filled if <code>fill</code> is true.</p>
 <hr />
-<p><code>cylinder_z()</code></p>
+<h5 id="cylinder_z"><code>cylinder_z()</code></h5>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">cylinder_z</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Make a cylinder from point <code>z1</code> to point <code>z2</code> with <code>x</code> and <code>y</code> giving the other axes of the positional argument, with a radius of <code>r</code>.
 Filled if <code>fill</code> is true.</p>
+<hr />
 <h3 id="worldpy">world.py</h3>
 <p>Simple script that helps with the python side of world making.</p>
+<hr />
 <h3 id="serverpy">server.py</h3>
 <p>Runs Multiplayer server scripts.</p>
 <p>Makes server/client objects/functions.</p>
+<hr />
 <h4 id="packet-codes">Packet Codes</h4>
 <div class="language-py highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">AUTHENTICATE</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">BLOCK</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span>
@@ -517,6 +662,7 @@ Filled if <code>fill</code> is true.</p>
 </span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="n">VERSION</span> <span class="o">=</span> <span class="s1">&#39;V&#39;</span>
 </span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="n">YOU</span> <span class="o">=</span> <span class="s1">&#39;U&#39;</span>
 </span></code></pre></div>
+<hr />
 
 
 
